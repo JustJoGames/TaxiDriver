@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -23,24 +24,28 @@ public class SimpleDialougeBox : MonoBehaviour
     }
 
 
-    private void Update()
+    public void Button()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (!started)
         {
-            if (!started)
-            {
-                linesindex = 0;
-                text.SetText(_dialouge[linesindex]);
-                group.alpha = 1;
-                started = true;
-            }
-            else if (linesindex < _dialouge.Count)
-            {
-                text.SetText(_dialouge[linesindex++]);
-            }
-            else
-                group.alpha  = 0;
+            linesindex = 0;
+            text.SetText(_dialouge[linesindex]);
+            group.alpha = 1;
+            started = true;
+        }
+        else if (linesindex < _dialouge.Count)
+        {
+            text.SetText(_dialouge[linesindex++]);
+        }
+        else
+            group.alpha = 0;
 
+        if (linesindex >= _dialouge.Count)
+        {
+            SceneManager.LoadScene("Next Scene");
         }
     }
+
+   
+
 }
