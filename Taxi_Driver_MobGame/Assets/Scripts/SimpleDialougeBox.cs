@@ -11,13 +11,15 @@ public class SimpleDialougeBox : MonoBehaviour
 
     private List<string> _dialouge;
     private int linesindex;
-    private TMP_Text text;
+    public TMP_Text text;
+    public TMP_Text text2;
     private CanvasGroup group;
     private bool started;
 
     // Start is called before the first frame update
     void Start()
     {
+        text2 = GetComponent<TMP_Text>();
         text = GetComponent<TMP_Text>();
         group = GetComponent<CanvasGroup>();
         group.alpha = 0;
@@ -30,22 +32,23 @@ public class SimpleDialougeBox : MonoBehaviour
         {
             linesindex = 0;
             text.SetText(_dialouge[linesindex]);
+            text2.SetText(_dialouge[linesindex]);
             group.alpha = 1;
             started = true;
         }
         else if (linesindex < _dialouge.Count)
         {
             text.SetText(_dialouge[linesindex++]);
-        }
-        else
-            group.alpha = 0;
+            text2.SetText(_dialouge[linesindex++]);
 
-        if (linesindex >= _dialouge.Count)
+        }
+        else if(linesindex == _dialouge.Count)
         {
             SceneManager.LoadScene("Next Scene");
         }
+        else
+            group.alpha = 0;
     }
-
-   
+  
 
 }
