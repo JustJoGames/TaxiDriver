@@ -12,21 +12,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79cb9ecc0d4a6d428ab98a681a33897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAreaShownRange: {x: -0.23043247, y: 9.148169}
+  timeAreaShownRange: {x: -0.7382689, y: 24.289045}
   trackScale: 1
   playRangeEnabled: 0
   windowTime: 0
   verticalScroll: 0
-  sequencerHeaderWidth: 230
+  sequencerHeaderWidth: 298
   m_TimeAreaPlayRange:
     start: 0
     end: 3.6166666666666667
   m_Keys:
-  - {fileID: -6847580935779906744, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
-  - {fileID: -3322981528565522456, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
-  - {fileID: 1645988421989123394, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
-  - {fileID: -468013596952810384, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
+  - {fileID: -101822628745615383, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
+  - {fileID: -2541206446306288090, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
+  - {fileID: -5324052229641125144, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
+  - {fileID: -1755853548140179237, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
+  - {fileID: -1827129949395099515, guid: 031fb6aef3b0f4387be7518ca6342e41, type: 2}
   m_Vals:
+  - collapsed: 0
+    showMarkers: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+    lastInlineCurveDataID: -1
+    inlineCurvesState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    inlineCurvesShownAreaInsideMargins:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 1
+      height: 1
+    trackHeightExtension: 0
+    m_MarkerTimeStampsKeys: 
+    m_MarkerTimeStampsValues: 
   - collapsed: 0
     showMarkers: 1
     showInlineCurves: 0

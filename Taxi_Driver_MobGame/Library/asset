@@ -12,4 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc234ab28a32840f5adfb84a075bc023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkLibrary: []
+  inkLibrary:
+  - inkAsset: {fileID: 102900000, guid: e76cec757f2034677af7a16348a5f3b3, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 9fc149e4fa9b040b2a84481e8ae8e543, type: 3}
+    unhandledCompileErrors: []
+    recursiveIncludeErrorPaths: []
+    errors: []
+    warnings: []
+    todos: []
+    masterInkAssets: []
+    localIncludePaths: []
+    includes: []

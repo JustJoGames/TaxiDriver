@@ -1,68 +1,168 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Ink.Runtime;
 
-// The dialogue manager is resposible for adding new dialogue boxes to the conversion when requested
-public class DialogueManager : MonoBehaviour {
+public class DialogueManager : MonoBehaviour
+{
+    public TextAsset inkFile;
+    public GameObject textBox;
+    public GameObject customButton;
+    public GameObject optionPanel;
+    public bool isTalking = false;
 
-	[SerializeField] private GameObject dialogueContainer;
-	[SerializeField] private GameObject textBoxPrefab;
+    static Story story;
+    Text nametag;
+    Text message;
+    List<string> tags;
+    static Choice choiceSelected;
 
-	RectTransform containerRectTrans;
+    // Start is called before the first frame update
+    void Start()
+    {
+        story = new Story(inkFile.text);
+        nametag = textBox.transform.GetChild(0).GetComponent<Text>();
+        message = textBox.transform.GetChild(1).GetComponent<Text>();
+        tags = new List<string>();
+        choiceSelected = null;
+    }
 
-	// Keeps track of the transform of the previous addition
-	private RectTransform lastRectTrans = null;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //Is there more to the story?
+            if (story.canContinue)
+            {
+                nametag.text = "Phoenix";
+                AdvanceDialogue();
 
-	void Awake ()
-	{
-		containerRectTrans = dialogueContainer.GetComponent<RectTransform>();
-	}
+                //Are there any choices?
+                if (story.currentChoices.Count != 0)
+                {
+                    StartCoroutine(ShowChoices());
+                }
+            }
+            else
+            {
+                FinishDialogue();
+            }
+        }
+    }
 
-	void AddDialogueBox()
-	{
-		RectTransform containerRectTrans = dialogueContainer.GetComponent<RectTransform>();
+    // Finished the Story (Dialogue)
+    private void FinishDialogue()
+    {
+        Debug.Log("End of Dialogue!");
+    }
 
-		GameObject newBox = Instantiate(textBoxPrefab, dialogueContainer.transform, false) as GameObject;
-		RectTransform newRectTrans = newBox.GetComponent<RectTransform>();
+    // Advance through the story 
+    void AdvanceDialogue()
+    {
+        string currentSentence = story.Continue();
+        ParseTags();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(currentSentence));
+    }
 
-		// If this isn't the first dialog box being added
-		if (lastRectTrans != null)
-		{
-			Vector2 newPos = new Vector2(lastRectTrans.localPosition.x, 
-										 lastRectTrans.localPosition.y - newRectTrans.rect.height);
+    // Type out the sentence letter by letter and make character idle if they were talking
+    IEnumerator TypeSentence(string sentence)
+    {
+        message.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            message.text += letter;
+            yield return null;
+        }
+        yield return null;
+    }
 
-			newRectTrans.localPosition = newPos;
+    // Create then show the choices on the screen until one got selected
+    IEnumerator ShowChoices()
+    {
+        Debug.Log("There are choices need to be made here!");
+        List<Choice> _choices = story.currentChoices;
 
-		}
+        for (int i = 0; i < _choices.Count; i++)
+        {
+            GameObject temp = Instantiate(customButton, optionPanel.transform);
+            temp.transform.GetChild(0).GetComponent<Text>().text = _choices[i].text;
+            temp.AddComponent<Selectable>();
+            temp.GetComponent<Selectable>().element = _choices[i];
+            temp.GetComponent<Button>().onClick.AddListener(() => { temp.GetComponent<Selectable>().Decide(); });
+        }
 
-		lastRectTrans = newRectTrans;
+        optionPanel.SetActive(true);
 
-		CheckContainerLength();
-	}
+        yield return new WaitUntil(() => { return choiceSelected != null; });
 
-	// Checks if the dialogue items have ran off the container length and adjusts accordingly
-	void CheckContainerLength()
-	{
-		// If the last item goes off the bottom edge of the container
-		if (containerRectTrans.rect.y > lastRectTrans.localPosition.y)
-		{	
-			float extendDistance = Mathf.Abs(lastRectTrans.rect.y) + lastRectTrans.rect.height/2;
-			
-			// Resizing the container extends it in both directions, so we must reposition it accordingly 
-			Vector2 newPos = new Vector2(containerRectTrans.localPosition.x, 
-										 containerRectTrans.localPosition.y - extendDistance/2);
+        AdvanceFromDecision();
+    }
 
-			containerRectTrans.sizeDelta = new Vector2(0f, containerRectTrans.sizeDelta.y + extendDistance);
-			containerRectTrans.localPosition = newPos;
-		}
-	}
+    // Tells the story which branch to go to
+    public static void SetDecision(object element)
+    {
+        choiceSelected = (Choice)element;
+        story.ChooseChoiceIndex(choiceSelected.index);
+    }
 
+    // After a choice was made, turn off the panel and advance from that choice
+    void AdvanceFromDecision()
+    {
+        optionPanel.SetActive(false);
 
-	void OnGUI()
-	{
-		if (GUI.Button(new Rect(20, 40, 100, 200), "Add box" ))
-		{
-			AddDialogueBox();
-		}
-	}
+        for (int i = 0; i < optionPanel.transform.childCount; i++)
+        {
+            Destroy(optionPanel.transform.GetChild(i).gameObject);
+        }
+        choiceSelected = null; // Forgot to reset the choiceSelected. Otherwise, it would select an option without player intervention.
+        AdvanceDialogue();
+    }
+
+    /*** Tag Parser ***/
+    /// In Inky, you can use tags which can be used to cue stuff in a game.
+    /// This is just one way of doing it. Not the only method on how to trigger events. 
+    void ParseTags()
+    {
+        tags = story.currentTags;
+        foreach (string t in tags)
+        {
+            string prefix = t.Split(' ')[0];
+            string param = t.Split(' ')[1];
+
+            switch (prefix.ToLower())
+            {
+                case "anim":
+                   
+                    break;
+                case "color":
+                    SetTextColor(param);
+                    break;
+            }
+        }
+    }
+ 
+    void SetTextColor(string _color)
+    {
+        switch (_color)
+        {
+            case "red":
+                message.color = Color.red;
+                break;
+            case "blue":
+                message.color = Color.cyan;
+                break;
+            case "green":
+                message.color = Color.green;
+                break;
+            case "white":
+                message.color = Color.white;
+                break;
+            default:
+                Debug.Log($"{_color} is not available as a text color");
+                break;
+        }
+    }
+
 }
