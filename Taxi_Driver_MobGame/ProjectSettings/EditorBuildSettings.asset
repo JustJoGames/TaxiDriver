@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Imelda_Conversation.unity
     guid: c1fdd956339d24623960ef74454cea42
   - enabled: 1
-    path: Assets/Scenes/Next Scene.unity
+    path: Assets/Scenes/Sofia_Conversation.unity
     guid: 6c7f612fa4ed34696929cb310cf7cae9
+  - enabled: 1
+    path: Assets/Scenes/Cassio_Conversation.unity
+    guid: aa5a176bf23f94c8f85f4317b464217a
+  - enabled: 1
+    path: Assets/Scenes/FinalCutscene_A.unity
+    guid: e918398a9c3cc4a73a1629eb7011ea52
+  - enabled: 1
+    path: Assets/Scenes/FinalCutscene_B.unity
+    guid: 3663bffa2564b4703bde3b9a9aa5be3f
   m_configObjects: {}

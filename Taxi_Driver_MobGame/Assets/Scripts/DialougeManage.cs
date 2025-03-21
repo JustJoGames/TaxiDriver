@@ -97,6 +97,16 @@ public class DialougeManage : MonoBehaviour
                 UIX.UpdateLayout(canvas.transform);
                 scrollRect.verticalNormalizedPosition = 0f;
             }
+
+            if (tag.StartsWith("scene; A"))
+            {
+                SceneManager.LoadScene("FinalCutScene_A");
+            }
+
+            if (tag.StartsWith("scene; B"))
+            {
+                SceneManager.LoadScene("FinalCutScene_B");
+            }
         }
 
     }
@@ -104,7 +114,7 @@ public class DialougeManage : MonoBehaviour
     void AdvanceFromDecision()
     {
         optionPanel.SetActive(false);
-       
+        AdvanceStory();
 
         for (int i = 0; i < optionPanel.transform.childCount; i++)
         {
@@ -116,7 +126,6 @@ public class DialougeManage : MonoBehaviour
         scrollRect.verticalNormalizedPosition = 0f;
 
         choiceSelected = null; // Forgot to reset the choiceSelected. Otherwise, it would select an option without player intervention.
-        AdvanceStory();
     }
 
 
@@ -146,6 +155,7 @@ public class DialougeManage : MonoBehaviour
     {
         choiceSelected = (Choice)element;
         ourStory.ChooseChoiceIndex(choiceSelected.index);
+     
 
     }
 
