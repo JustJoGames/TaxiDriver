@@ -8,6 +8,7 @@ using Ink.Runtime;
 
 public class DialougeManage : MonoBehaviour
 {
+
     public Canvas canvas;
     public ScrollRect scrollRect;
 
@@ -24,94 +25,57 @@ public class DialougeManage : MonoBehaviour
     public Transform dialogueContent;
     static Choice choiceSelected;
 
-    private void Awake()
+    public DialogueContainer contain;
+    public string words;
+
+
+    public void Awake()
     {
+        contain = GetComponent<DialogueContainer>();
         ourStory = new Story(inkAsset.text);
         choiceSelected = null;
-        isChoosing = false;
-    }
-
-    private void Start()
-    {
-
-        AdvanceStory();
-    }
-
-    private void Update()
-    {
-        if (isChoosing == false)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                if (ourStory.canContinue)
-                {
-                    AdvanceStory();
-
-                    if (ourStory.currentChoices.Count != 0) //Are there any choices?
-                    {
-                        StartCoroutine(ShowChoices());
-
-                    }
-
-                }
-                else
-                {
-                    FinishDialogue();
-                }
-                
-            }
-
-        }
-        else if(isChoosing == true)
-        {
-
-            return;
-        }
 
     }
 
-    private void FinishDialogue()
+    public void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+
+    }
+
+    public void Update()
+    {
+       
+    }
+
+    public void FinishDialogue()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Debug.Log("End of Dialogue!");
     }
 
 
-    void AdvanceStory()
+    public void AdvanceStory()
     {
-        isChoosing = false;
+        ParseTags();
+        StopAllCoroutines();
 
-        string text = ourStory.Continue();
+        UIX.UpdateLayout(canvas.transform);
+        scrollRect.verticalNormalizedPosition = 0f;
 
-        foreach (string tag in ourStory.currentTags)
+        if (ourStory.currentChoices.Count != 0) //Are there any choices?
         {
-            if (tag.StartsWith("name;"))
-            {
-                string[] parts = tag.Split(';');
-                string characterName = parts[1];
+            StartCoroutine(ShowChoices());
 
-                GameObject currentDialogue = Instantiate(dialogueContainer, dialogueContent, true);
-                currentDialogue.GetComponent<DialogueContainer>().characterName.text = characterName;
-                currentDialogue.GetComponent<DialogueContainer>().textboxText.text = text;
+        }
 
-                UIX.UpdateLayout(canvas.transform);
-                scrollRect.verticalNormalizedPosition = 0f;
-            }
-
-            if (tag.StartsWith("scene; A"))
-            {
-                SceneManager.LoadScene("FinalCutScene_A");
-            }
-
-            if (tag.StartsWith("scene; B"))
-            {
-                SceneManager.LoadScene("FinalCutScene_B");
-            }
+        if (!ourStory.canContinue && ourStory.currentChoices.Count == 0)
+        {
+            FinishDialogue();
         }
 
     }
 
-    void AdvanceFromDecision()
+    public void AdvanceFromDecision()
     {
         optionPanel.SetActive(false);
         AdvanceStory();
@@ -128,10 +92,11 @@ public class DialougeManage : MonoBehaviour
         choiceSelected = null; // Forgot to reset the choiceSelected. Otherwise, it would select an option without player intervention.
     }
 
+ 
 
     IEnumerator ShowChoices()
     {
-        isChoosing = true;
+
         Debug.Log("There are choices need to be made here!");
         List<Choice> _choices = ourStory.currentChoices;
 
@@ -155,17 +120,41 @@ public class DialougeManage : MonoBehaviour
     {
         choiceSelected = (Choice)element;
         ourStory.ChooseChoiceIndex(choiceSelected.index);
-     
 
     }
-
-    IEnumerator TypeSentence(string text)
+   
+    public void ParseTags()
     {
-       GetComponent<DialogueContainer>().textboxText.text = "";
-        foreach (char letter in text.ToCharArray())
+        string text = ourStory.Continue();
+
+        foreach (string tag in ourStory.currentTags)
         {
-            GetComponent<DialogueContainer>().textboxText.text += letter;
-            yield return null;
+            if (tag.StartsWith("name;"))
+            {
+
+                string[] parts = tag.Split(';');
+                string characterName = parts[1];
+
+                GameObject currentDialogue = Instantiate(dialogueContainer, dialogueContent, true);
+                currentDialogue.GetComponent<DialogueContainer>().characterName.text = characterName;
+                currentDialogue.GetComponent<DialogueContainer>().textboxText.text = text;
+
+             
+                UIX.UpdateLayout(canvas.transform);
+                scrollRect.verticalNormalizedPosition = -1f;
+            }
+
+            if (tag.StartsWith("scene; A"))
+            {
+                SceneManager.LoadScene("FinalCutScene_A");
+            }
+
+            if (tag.StartsWith("scene; B"))
+            {
+                SceneManager.LoadScene("FinalCutScene_B");
+            }
         }
+
+       
     }
 }

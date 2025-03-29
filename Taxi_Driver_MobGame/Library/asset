@@ -15,7 +15,7 @@ MonoBehaviour:
   inkLibrary:
   - inkAsset: {fileID: 102900000, guid: f1fd85fbe0b374beb8e1c52005a571ba, type: 3}
     jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 5f612c08b06f447efbc15e40183594c4, type: 3}
     unhandledCompileErrors: []
     recursiveIncludeErrorPaths: []
     errors: []
