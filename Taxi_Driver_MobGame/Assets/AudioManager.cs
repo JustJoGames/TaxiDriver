@@ -6,9 +6,11 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     private AudioSource radioAudio;
+    public Radio_Controller radio;
 
     private void Awake()
     {
+
         GameObject[] musicobj = GameObject.FindGameObjectsWithTag("Game_Music");
         if (musicobj.Length > 1)
         {
@@ -21,8 +23,8 @@ public class AudioManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Imelda_Conversation"))
         {
-            Destroy(this.gameObject);
             StartCoroutine(FadeOut(radioAudio, 0.1f));
+            Destroy(this.gameObject);
         }
     }
 
@@ -40,5 +42,21 @@ public class AudioManager : MonoBehaviour
         audioSource.volume = startvolume;
 
 
+    }
+
+    public IEnumerator FadeIn(AudioSource audioSource, float fadetime)
+    {
+        float startvolume = audioSource.volume;
+
+
+        audioSource.Play();
+
+        while (audioSource.volume > startvolume)
+        {
+            audioSource.volume += startvolume * Time.deltaTime / fadetime;
+            yield return null;
+        }
+
+        audioSource.volume = startvolume;
     }
 }

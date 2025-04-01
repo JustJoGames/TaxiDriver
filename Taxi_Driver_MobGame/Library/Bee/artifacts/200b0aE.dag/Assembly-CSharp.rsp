@@ -396,6 +396,7 @@
 "Assets/Scripts/DialogueContainer.cs"
 "Assets/Scripts/DialogueManager.cs"
 "Assets/Scripts/DialougeManage.cs"
+"Assets/Scripts/LoadButtonAfterVideoEnds.cs"
 "Assets/Scripts/LoadSceneAfterVideoEnds.cs"
 "Assets/Scripts/Message.cs"
 "Assets/Scripts/Radio_Controller.cs"

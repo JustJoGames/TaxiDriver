@@ -39,12 +39,13 @@ public class DialougeManage : MonoBehaviour
 
     public void Start()
     {
-
+        AdvanceStory();
     }
 
-    public void Update()
+    public void LateUpdate()
     {
-       
+        UIX.UpdateLayout(canvas.transform);
+        scrollRect.verticalNormalizedPosition = 0f;
     }
 
     public void FinishDialogue()
@@ -153,6 +154,7 @@ public class DialougeManage : MonoBehaviour
             {
                 SceneManager.LoadScene("FinalCutScene_B");
             }
+
         }
 
        

@@ -15,6 +15,6 @@ public class LoadSceneAfterVideoEnds : MonoBehaviour
 
     void LoadScene(VideoPlayer vp)
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

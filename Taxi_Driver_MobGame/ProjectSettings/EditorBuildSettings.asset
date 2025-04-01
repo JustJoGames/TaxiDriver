@@ -9,21 +9,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Title_Screen.unity
     guid: bed689af2e4b24fa0b0bebe24f4f6da0
   - enabled: 1
-    path: Assets/Scenes/Opening_Cutscene.unity
+    path: Assets/Scenes/CutScene/Opening_Cutscene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Imelda_Conversation.unity
+    path: Assets/Scenes/Pick_Up/Imelda_PickUp.unity
+    guid: 72241af3910f04c7fb56926e6e750c81
+  - enabled: 1
+    path: Assets/Scenes/Conversations/Imelda_Conversation.unity
     guid: c1fdd956339d24623960ef74454cea42
   - enabled: 1
-    path: Assets/Scenes/Sofia_Conversation.unity
+    path: Assets/Scenes/Drop_Off/Imelda_Drop_Off.unity
+    guid: 23644d63e6529489d86eadaa696f0057
+  - enabled: 1
+    path: Assets/Scenes/Pick_Up/Sofia_Pick Up.unity
+    guid: d2f501a8016484e198a315c1940c38e9
+  - enabled: 1
+    path: Assets/Scenes/Conversations/Sofia_Conversation.unity
     guid: 6c7f612fa4ed34696929cb310cf7cae9
   - enabled: 1
-    path: Assets/Scenes/Cassio_Conversation.unity
+    path: Assets/Scenes/Drop_Off/Sofia_Drop_Off.unity
+    guid: cfb6b5654479c4407ac8c2b46ef241b7
+  - enabled: 1
+    path: Assets/Scenes/Pick_Up/Cassio_PickUp.unity
+    guid: 11089c5608eac4448ad82d55fd14f3f7
+  - enabled: 1
+    path: Assets/Scenes/Conversations/Cassio_Conversation.unity
     guid: aa5a176bf23f94c8f85f4317b464217a
   - enabled: 1
-    path: Assets/Scenes/FinalCutscene_A.unity
+    path: Assets/Scenes/CutScene/FinalCutscene_A.unity
     guid: e918398a9c3cc4a73a1629eb7011ea52
   - enabled: 1
-    path: Assets/Scenes/FinalCutscene_B.unity
+    path: Assets/Scenes/CutScene/FinalCutscene_B.unity
     guid: 3663bffa2564b4703bde3b9a9aa5be3f
   m_configObjects: {}

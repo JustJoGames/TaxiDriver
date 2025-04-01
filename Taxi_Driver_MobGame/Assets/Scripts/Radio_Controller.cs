@@ -10,6 +10,7 @@ public class Radio_Controller : MonoBehaviour
     private int trackIndex;
 
     private AudioSource radioAudio;
+    public AudioSource statics;
     public AudioSource honk;
 
     public void Awake()
@@ -20,12 +21,18 @@ public class Radio_Controller : MonoBehaviour
 
     }
 
+    public void Start()
+    {
+        PlayAudio();
+    }
+
     public void SkipForwardButton()
     {
+        statics.Play();
         if (trackIndex < audioTracks.Length - 1)
         {
             trackIndex++;
-            StartCoroutine(FadeOut(radioAudio, 0.1f));
+            StartCoroutine(FadeOut(radioAudio, 0.4f));
             
         }
         else
@@ -37,10 +44,12 @@ public class Radio_Controller : MonoBehaviour
 
     public void SkipBackwardsButton()
     {
+        statics.Play();
+
         if (trackIndex >= 1)
         {
             trackIndex--;
-            StartCoroutine(FadeOut(radioAudio, 0.1f));
+            StartCoroutine(FadeOut(radioAudio, 0.4f));
             
         }
 
@@ -55,8 +64,9 @@ public class Radio_Controller : MonoBehaviour
 
     public void PlayAudio()
     {
-        radioAudio.Play();
-        StartCoroutine(FadeIn(radioAudio, 0.1f));
+        statics.Play();
+        StartCoroutine(FadeIn(radioAudio, 1f));
+
     }
 
     public void StopAudio()
@@ -89,7 +99,6 @@ public class Radio_Controller : MonoBehaviour
     {
         float startvolume = audioSource.volume;
 
-        
         audioSource.Play();
 
         while (audioSource.volume > startvolume)

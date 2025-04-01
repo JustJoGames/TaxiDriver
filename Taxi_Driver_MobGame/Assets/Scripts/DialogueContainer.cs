@@ -14,6 +14,11 @@ public class DialogueContainer : MonoBehaviour
 
     public bool canContinue;
 
+    public void Awake()
+    {
+        textboxText.color = Color.white;
+        characterName.color = Color.white;
+    }
     public void Start()
     {
         canContinue = false;
@@ -31,7 +36,7 @@ public class DialogueContainer : MonoBehaviour
             characterName.color = old_Text;
             textboxText.color = old_Text;
            
-        }
+       }
 
        if (TypeSentence() != null)
        {
@@ -64,8 +69,9 @@ public class DialogueContainer : MonoBehaviour
             }
             else
             {
-                textboxText.text += letter;
                 click.Play();
+                textboxText.text += letter;
+             
                 yield return new WaitForSeconds(typingSpeed);
             }
         }

@@ -193,7 +193,7 @@ We’ll just be expediting the process. Besides, you won’t be implicated."
 
 ==Deaths==
 #name;Hank
-<i>(sighs.)</i> "You’re gonna be the death of me on of these days"
+<i>(sighs.)</i> "You’re gonna be the death of me one of these days"
 
 #name;Imelda
 "Nonsense Henry. You’re going to be the death of my husband."
@@ -232,6 +232,7 @@ I pray you’re right. Now, split before I change my mind. And– (you kiss her 
 "You won’t regret this." 
 
 ->END
+
 ==regret==
 #name;Hank
 "Best of luck"

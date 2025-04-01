@@ -1,19 +1,32 @@
 #name;Hank
-Evening, Cassio. (CASSIO grunts.) Any news?
+"Evening, Cassio." 
+
+<i>(CASSIO grunts.)</i> 
+
+#name;Hank
+"Any news?"
 
 #name;Cassio
-Nothing from me, for once. (pause.) Heard that tonight was two birds, one stone. The Don should be more careful.
+Nothing from me, for once. 
 
-**[(chuckles). It never seems to catch up to him.]->Catch
+#name;Cassio
+"Heard that tonight was two birds, one stone. The Don should be more careful."
+
+**[<i>(chuckles)</i> It never seems to catch up to him.]->Catch
 
 **[And no one is the wiser.]->Wiser
 
 ==Catch==
 #name;Hank
-It never seems to catch up to him.
+"It never seems to catch up to him."
 
 #name;Cassio
-(under his breath) Someday, maybe. (clears his throat, and opens his briefcase. Begins rifling through papers.) Any holiday plans? Oh, wait. HA! Sorry.
+<i>(under his breath)</i> "Someday, maybe." 
+
+<i>(He clears his throat, and opens his briefcase and begins rifling through papers.)</i> 
+
+#name;Cassio
+"Any holiday plans? Oh, wait. <b>HA!</b> Sorry."
 
 **[No harm done.]->NoHarm
 
@@ -21,10 +34,15 @@ It never seems to catch up to him.
 
 ==Wiser==
 #name;Hank
-And no one is the wiser.
+"And no one is the wiser."
 
 #name;Cassio
-(under his breath) Someday, maybe. (clears his throat, and opens his briefcase. Begins rifling through papers.) Any holiday plans? Oh, wait. HA! Sorry.
+<i>(under his breath)</i> "Someday, maybe." 
+
+<i>(He clears his throat, and opens his briefcase and begins rifling through papers.)</i> 
+
+#name;Cassio
+"Any holiday plans? Oh, wait. <b>HA!</b> Sorry."
 
 **[No harm done.]->NoHarm
 
@@ -32,32 +50,32 @@ And no one is the wiser.
 
 ==NoHarm==
 #name;Hank
-No harm done
+"No harm done"
 
 #name;Cassio
-Lucy Roscoe is billed to perform tonight. Should be swell.
+"Lucy Roscoe is billed to perform tonight. Should be swell."
 
 #name;Hank
-I’m sure Imelda will be happy to see her.
+"I’m sure Imelda will be happy to see her."
 
 #name;Cassio
-Were they friends?
+"Were they friends?"
 
 **[A long time ago.]->Long
 
 **[I think so?]->Think
 
 ==Silent==
-(they ride in silence for a while.)
+<i>(they ride in silence for a while.)</i>
 
 #name;Cassio
-Lucy Roscoe is billed to perform tonight. Should be swell.
+"Lucy Roscoe is billed to perform tonight. Should be swell."
 
 #name;Hank
-I’m sure Imelda will be happy to see her.
+"I’m sure Imelda will be happy to see her."
 
 #name;Cassio
-Were they friends?
+"Were they friends?"
 
 **[A long time ago.]->Long
 
@@ -65,16 +83,16 @@ Were they friends?
 
 ==Long==
 #name;Hank
-A long time ago.
+"A long time ago."
 
 #name;Cassio
-(he nods. beat.) How is she?
+<i>(Cassio nods.)</i> "How is she?"
 
 #name;Hank
-You should ask her yourself.
+"You should ask her yourself."
 
 #name;Cassio
-I can’t. The Don can’t see... forget it.
+"I can’t. The Don can’t see... forget it."
 
 **[That reminds me... The contessa told me to pass on a request]->Request
 
@@ -85,19 +103,22 @@ I can’t. The Don can’t see... forget it.
 I think so?
 
 #name;Cassio
-(he nods. beat.) How is she?
+<i>(Cassio nods.)</i> "How is she?"
 
 #name;Hank
-You should ask her yourself.
+"You should ask her yourself."
 
 #name;Cassio
-I can’t. The Don can’t see... forget it.
+"I can’t. The Don can’t see... forget it."
 
-**[That reminds me... The contessa told me to pass on a request]->Request
+**[That reminds me...]->Request
 
-**[NEVER MIND!!!!]->NEVER
+**[Stay Silent]->NEVER
 
 ==Request==
+#name;Hank
+"That reminds me... The contessa told me to pass on a request"
+
 #scene; A
 ->END
 

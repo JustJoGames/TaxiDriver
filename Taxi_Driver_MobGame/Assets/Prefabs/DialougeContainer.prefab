@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: {fileID: 1540640382334991248}
   textboxText: {fileID: 4615946484791209772}
-  old_Text: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+  old_Text: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
   words: 
   click: {fileID: 213328999345655711}
   canContinue: 0
@@ -396,8 +396,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Character Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b42add658f8794939b953c44a3ba4924, type: 2}
-  m_sharedMaterial: {fileID: -6799566373787381745, guid: b42add658f8794939b953c44a3ba4924, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f6866a56dbe8344ffa62516d5ed01481, type: 2}
+  m_sharedMaterial: {fileID: -6799566373787381745, guid: f6866a56dbe8344ffa62516d5ed01481, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
