@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 82154
+  controlID: 85878
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,10 +89,10 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
+    m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 82077
+  controlID: 85988
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 82020
+  controlID: 86074
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,9 +236,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fa750000
+      m_SelectedIDs: f6750000
       m_LastClickedID: 0
-      m_ExpandedIDs: a4f5fbff980afcffdc0cfcff560efcff5e0ffcff3210fcff7611fcffc411fcff1212fcff8e12fcff0016fcff2e17fcff5018fcffd218fcffd418fcffac19fcff2e1afcff301afcff421dfcffec1efcffa222fcff1826fcff3836fcffbc36fcff6a3dfcff0c41fcffa044fcff0045fcff864efcff2665fcffe66ffcffe86ffcff2672fcff2872fcff9675fcff9875fcff5889fcffdea7fcff4ca8fcff4ea8fcffdab0fcffd2b6fcff6ebbfcff78bbfcff8cbbfcffa2bbfcffa4bbfcffe0c2fcffe2c2fcff30c4fcff32c4fcfff0c5fcffb0c6fcffb4c8fcffb6c8fcffa4ddfcffa6ddfcff1adffcff3ee0fcffaae1fcfface1fcff6836fdff7c36fdff9236fdffae37fdffe843fdffa244fdff1045fdffda5cfdffdc5cfdffda63fdff7a71fdffd476fdff1878fdff9a78fdff127afdff947afdff967afdffa2b3fdff24b4fdff26b4fdff58b8fdffaab9fdfffabbfdff7cbcfdffe8bdfdff6abefdff6cbefdff5ac0fdffdcc0fdfff4c5fdff3cc7fdffc2d3fdff5cd8fdffded8fdff28e3fdffaae3fdff50e5fdff66e5fdff18e7fdff2ee7fdff7ee8fdff94e8fdff84ebfdffe2ebfdffdcedfdff7801feffc014feffd6d0feff42d1feff58d1feffe8d2feff5ad4feff48d6feff5ed6feff9ed8feffb4d8feffb6d8feff0cdafeff22dafefff67affff5881ffffaa82ffffbe82ffff0c89ffff2089ffffa88fffffbc8fffff28b8ffffe2bdffff24f5fffff6f9fffff4ffffff60760000028f00004a91000024920000709200008a9200009c920000d692000026ac000098ac00001ead0000f2e0000048ee0000b0ee0000daee00003eef000082ef000044f0000032f600005cf6000054f7000008f800004cf80000bef800006c150100b4200100a42201006c3f0100b03f0100da4d010034500100b4520100de520100845801006e590100305a0100645b0100405e0100e05e01006c5f0100026001006a600100b6610100
+      m_ExpandedIDs: fcb9fbff70bafbffe4bafbfff0c2fbff4ac3fbff32c6fbff3cc6fbff0ac7fbff12c7fbff1ac7fbffe8c7fbfff0c7fbfff8c7fbffd6c8fbffdec8fbffe8c8fbff08c9fbff38d8fbff90d8fbff94dbfbff9edbfbff6cdcfbff74dcfbff7cdcfbff4addfbff52ddfbff5addfbff38defbff40defbff4adefbff6adefbffb0e9fbffb6ebfbff98ecfbffa4f5fbff980afcffdc0cfcff560efcff5e0ffcff3210fcff7611fcffc411fcff1212fcff8e12fcff0016fcff2e17fcff5018fcffd218fcffd418fcffac19fcff2e1afcff301afcff421dfcffec1efcffa222fcff1826fcff3836fcffbc36fcff6a3dfcff0c41fcffa044fcff0045fcff864efcff2665fcffe66ffcffe86ffcff2672fcff2872fcff9675fcff9875fcff5889fcffdea7fcff4ca8fcff4ea8fcffdab0fcffd2b6fcff6ebbfcff78bbfcff8cbbfcffa2bbfcffa4bbfcffe0c2fcffe2c2fcff30c4fcff32c4fcfff0c5fcffb0c6fcffb4c8fcffb6c8fcffa4ddfcffa6ddfcff1adffcff3ee0fcffaae1fcfface1fcff6836fdff7c36fdff9236fdffae37fdffe843fdffa244fdff1045fdffda5cfdffdc5cfdffda63fdff7a71fdffd476fdff1878fdff9a78fdff127afdff947afdff967afdffa2b3fdff24b4fdff26b4fdff58b8fdffaab9fdfffabbfdff7cbcfdffe8bdfdff6abefdff6cbefdff5ac0fdffdcc0fdfff4c5fdff3cc7fdffc2d3fdff5cd8fdffded8fdff28e3fdffaae3fdff50e5fdff66e5fdff18e7fdff2ee7fdff7ee8fdff94e8fdff84ebfdffe2ebfdffdcedfdff7801feffc014feffd6d0feff42d1feff58d1feffe8d2feff5ad4feff48d6feff5ed6feff9ed8feffb4d8feffb6d8feff0cdafeff22dafefff67affff5881ffffaa82ffffbe82ffff0c89ffff2089ffffa88fffffbc8fffff28b8ffffe2bdffff24f5fffff6f9fffff4ffffff60760000028f00004a91000024920000709200008a9200009c920000d692000026ac000098ac00001ead0000f2e0000048ee0000b0ee0000daee00003eef000082ef000044f0000032f600005cf6000054f7000008f800004cf80000bef800006c150100b4200100a42201006c3f0100b03f0100da4d010034500100b4520100de520100845801006e590100305a0100645b0100405e0100e05e01006c5f0100026001006a600100b661010072650100aa6701004e8101007c810100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -254,7 +254,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 5}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -684,9 +684,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1298.4437, y: 1001.1217, z: -15.992971}
+    m_Target: {x: 1231.0332, y: 1819.8792, z: -17.165419}
     speed: 2
-    m_Value: {x: 1298.4437, y: 1001.1217, z: -15.992971}
+    m_Value: {x: 1231.0332, y: 1819.8792, z: -17.165419}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -736,9 +736,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1261.1068
+    m_Target: 1797.9377
     speed: 2
-    m_Value: 1261.1068
+    m_Value: 1797.9377
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 82078
+  controlID: 85989
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -902,7 +902,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -911,15 +911,15 @@ MonoBehaviour:
     y: 0
     width: 629
     height: 347
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -965,7 +965,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Images_Videos
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -973,15 +973,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Images_Videos
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 08750000
-    m_LastClickedID: 29960
+    m_SelectedIDs: 10750000
+    m_LastClickedID: 29968
     m_ExpandedIDs: 000000002c7300002e7300003073000032730000347300003673000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1035,9 +1035,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: fa750000
-    m_LastClickedInstanceID: 30202
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 1cd0fbff
+    m_LastClickedInstanceID: -274404
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000766200005465000090690000fc62000006360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1062,7 +1062,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 26.000366}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -1136,7 +1136,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 90234
+  m_LastSelectedObjectID: 97030
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1208,7 +1208,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/CutScene
+    - Assets/Scenes/Conversations
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1216,15 +1216,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Scenes/CutScene
+  - Assets/Scenes/Conversations
   m_LastFoldersGridSize: 62
   m_LastProjectPath: /Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6c580100
-    m_LastClickedID: 88172
+    scrollPos: {x: 0, y: 34}
+    m_SelectedIDs: 5e580100
+    m_LastClickedID: 88158
     m_ExpandedIDs: 000000002c7300002e730000307300003273000034730000367300001275000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1278,8 +1278,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: fa750000
-    m_LastClickedInstanceID: 30202
+    m_SelectedInstanceIDs: f6750000
+    m_LastClickedInstanceID: 30198
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 76620000626c0000506a00008c5d0000465d0000fc62000006360000
     m_RenameOverlay:
@@ -1333,7 +1333,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 82155
+  controlID: 85879
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1379,8 +1379,8 @@ MonoBehaviour:
     y: 282
     width: 407
     height: 568
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}

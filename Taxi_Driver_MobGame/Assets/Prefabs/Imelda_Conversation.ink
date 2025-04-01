@@ -142,7 +142,7 @@ We’ll just be expediting the process. Besides, you won’t be implicated."
 "And he can leverage it for a new one."
 
 #name;Hank
-"And you think <b>THAT<b/> slimeball can fill <b>HIS</b> shoes?"
+"And you think <b>THAT</b> slimeball can fill <b>HIS</b> shoes?"
 
 #name;Imelda
 "That’s irrelevant. Trust me." 

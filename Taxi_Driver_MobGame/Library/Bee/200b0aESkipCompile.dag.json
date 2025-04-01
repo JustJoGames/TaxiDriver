@@ -1,0 +1,400 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "DisplayName": null,
+      "Inputs": [],
+      "Outputs": [],
+      "ToBuildDependencies": [
+        1,
+        2,
+        3
+      ],
+      "OverwriteOutputs": false,
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "ScriptAssemblies",
+      "DisplayName": null,
+      "Inputs": [],
+      "Outputs": [],
+      "OverwriteOutputs": false,
+      "DebugActionIndex": 1
+    },
+    {
+      "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
+      "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
+      "Action": "\"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/netcorerun/netcorerun\" \"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Cinemachine.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Ink-Libraries.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.Burst.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.InputSystem.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.Mathematics.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/YarnSpinner.Unity.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies/YarnSpinnerTests.CommandsInAnAssemblyDefinition.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Antlr4.Runtime.Standard.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.CsvHelper.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Google.Protobuf.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Bcl.AsyncInterfaces.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Extensions.FileSystemGlobbing.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Win32.SystemEvents.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Buffers.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Drawing.Common.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.IO.Packaging.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Memory.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Numerics.Vectors.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Reflection.TypeExtensions.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Runtime.CompilerServices.Unsafe.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Text.Encodings.Web.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Text.Json.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Threading.Tasks.Extensions.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/YarnSpinner.Compiler.dll\" -a=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/YarnSpinner.dll\" -s=\"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Managed/UnityEngine\" -s=\"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/NetStandard/Extensions/2.0.0\" -s=\"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/NetStandard/ref/2.1.0\" -s=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/ScriptAssemblies\" -s=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.burst@1.8.9\" -s=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen\" -s=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -s=\"/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Inputs": [
+        "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/netcorerun/netcorerun",
+        "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
+        "Library/ScriptAssemblies/Assembly-CSharp.dll",
+        "Library/ScriptAssemblies/Cinemachine.dll",
+        "Library/ScriptAssemblies/Ink-Libraries.dll",
+        "Library/ScriptAssemblies/Unity.Burst.dll",
+        "Library/ScriptAssemblies/Unity.InputSystem.dll",
+        "Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll",
+        "Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll",
+        "Library/ScriptAssemblies/Unity.Mathematics.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll",
+        "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
+        "Library/ScriptAssemblies/Unity.Timeline.dll",
+        "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
+        "Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll",
+        "Library/ScriptAssemblies/Unity.VisualScripting.State.dll",
+        "Library/ScriptAssemblies/UnityEngine.TestRunner.dll",
+        "Library/ScriptAssemblies/UnityEngine.UI.dll",
+        "Library/ScriptAssemblies/YarnSpinner.Unity.dll",
+        "Library/ScriptAssemblies/YarnSpinnerTests.CommandsInAnAssemblyDefinition.dll",
+        "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll",
+        "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll",
+        "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll",
+        "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll",
+        "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll",
+        "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll",
+        "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll",
+        "Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Antlr4.Runtime.Standard.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.CsvHelper.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Google.Protobuf.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Bcl.AsyncInterfaces.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Extensions.FileSystemGlobbing.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Win32.SystemEvents.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Buffers.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Drawing.Common.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.IO.Packaging.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Memory.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Numerics.Vectors.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Reflection.TypeExtensions.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Runtime.CompilerServices.Unsafe.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Text.Encodings.Web.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Text.Json.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Threading.Tasks.Extensions.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/YarnSpinner.Compiler.dll",
+        "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/YarnSpinner.dll"
+      ],
+      "Outputs": [
+        "Library/BuildPlayerData/Editor/TypeDb-All.json"
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 2
+    },
+    {
+      "Annotation": "ScriptAssembliesAndTypeDB",
+      "DisplayName": null,
+      "Inputs": [],
+      "Outputs": [],
+      "ToBuildDependencies": [
+        1,
+        2
+      ],
+      "OverwriteOutputs": false,
+      "DebugActionIndex": 3
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.BuildTools.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.Core.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.CSharpSupport.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.DotNet.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.Tools.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.TundraBackend.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Newtonsoft.Json.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/NiceIO.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/SharpYaml.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.Api.Attributes.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.Cecil.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.Linker.Api.dll"
+    },
+    {
+      "File": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline/Unity.Options.dll"
+    },
+    {
+      "File": "Library/Bee/200b0aESkipCompile-inputdata.json"
+    }
+  ],
+  "StatSignatures": [
+    {
+      "File": "/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/getconf"
+    },
+    {
+      "File": "Assets/csc.rsp"
+    },
+    {
+      "File": "Assets/mcs.rsp"
+    },
+    {
+      "File": "Library/Bee/200b0aESkipCompile-inputdata.json"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Antlr4.Runtime.Standard.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.CsvHelper.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Google.Protobuf.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Bcl.AsyncInterfaces.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.Microsoft.Win32.SystemEvents.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Buffers.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Drawing.Common.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.IO.Packaging.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Memory.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Numerics.Vectors.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Reflection.TypeExtensions.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Runtime.CompilerServices.Unsafe.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Text.Encodings.Web.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Text.Json.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/Yarn.System.Threading.Tasks.Extensions.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/YarnSpinner.Compiler.dll"
+    },
+    {
+      "File": "Library/PackageCache/dev.yarnspinner.unity@2.5.1/Runtime/DLLs/YarnSpinner.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Assembly-CSharp.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Cinemachine.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Ink-Libraries.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Burst.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.InputSystem.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Mathematics.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Timeline.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.VisualScripting.State.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/UnityEngine.TestRunner.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/UnityEngine.UI.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/YarnSpinner.Unity.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/YarnSpinnerTests.CommandsInAnAssemblyDefinition.dll"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/BuildPipeline"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".pdb"
+  ],
+  "StructuredLogFileName": "Library/Bee/tundra.log.json",
+  "StateFileName": "Library/Bee/TundraBuildState.state",
+  "StateFileNameTmp": "Library/Bee/TundraBuildState.state.tmp",
+  "StateFileNameMapped": "Library/Bee/TundraBuildState.state.map",
+  "ScanCacheFileName": "Library/Bee/tundra.scancache",
+  "ScanCacheFileNameTmp": "Library/Bee/tundra.scancache.tmp",
+  "DigestCacheFileName": "Library/Bee/tundra.digestcache",
+  "DigestCacheFileNameTmp": "Library/Bee/tundra.digestcache.tmp",
+  "CachedNodeOutputDirectoryName": "Library/Bee/CachedNodeOutput",
+  "EmitDataForBeeWhy": 0,
+        "NamedNodes": {
+          "all_tundra_nodes": 0,
+          "ScriptAssemblies": 1,
+          "ScriptAssembliesAndTypeDB": 3
+        }
+,  "DefaultNodes": [
+    0
+  ],
+  "SharedResources": [],
+  "Scanners": [],
+  "Identifier": "Library/Bee/200b0aESkipCompile.dag.json",
+  "PayloadsFile": "/Users/jojoa/Desktop/GameProjects/Unity/TaxiDriver/Taxi_Driver_MobGame/Library/Bee/200b0aESkipCompile.dag.payloads",
+  "RelativePathToRoot": "../.."
+}

@@ -215,9 +215,9 @@
 #name;Sofia
 "Thank you, Hank. For the ride, and the kindness."
 
-**[Anytime, kid.] ->END
+**[Anytime, kid.] ->Anytime
 
-**[I got your back.] ->END
+**[I got your back.] ->Back
 
 ==Case==
 #name;Hank
@@ -236,7 +236,6 @@
 #name;Hank
 "Anytime, kid"
 
-""
 
 ->END
 
@@ -244,6 +243,5 @@
 #name;Hank
 "I got your back"
 
-""
 
 ->END

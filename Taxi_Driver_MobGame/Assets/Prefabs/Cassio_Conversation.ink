@@ -94,9 +94,9 @@ Nothing from me, for once.
 #name;Cassio
 "I can’t. The Don can’t see... forget it."
 
-**[That reminds me... The contessa told me to pass on a request]->Request
+**[That reminds me...]->Request
 
-**[NEVER MIND!!!!]->NEVER
+**[Stay Silent]->NEVER
 
 ==Think==
 #name;Hank
